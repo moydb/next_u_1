@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hoja de Vida</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$(".meter > span").each(function() {
+				$(this)
+					.data("origWidth", $(this).width())
+					.width(0)
+					.animate({
+						width: $(this).data("origWidth")
+					}, 1200);
+			});
+		});
+	</script>
+</head>
+
+<body>
+<header>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2" align="center" bgcolor="#CCCCCC" style=" background-image:url(images/mdb.svg); background-position:top left; background-repeat:no-repeat; background-size: 80px;">
+        <nav>
+          <table width="10%" border="0" cellpadding="10" cellspacing="5">
+              <tr>
+                <td align="center"><a href="index.html" class="mainmenu"> <img src="images/home.png" alt="home" width="40" height="40"  />Inicio</a></td>
+                <td align="center"><a href="educacion.html" class="mainmenu"><img src="images/applications_office.png" alt="Educación" width="40" height="40"/>Educación</a></td>
+                <td align="center"><a href="experiencia.html" class="mainmenu"><img src="images/drive_work.png" alt="Experiencia" width="40" height="40"/>Experiencia</a></td>
+              </tr>
+            </table>
+        </nav>
+    </td>
+  </tr>
+  <tr>
+    <td height="40" colspan="2" align="center"><h2>Moises Díaz Bravo</h2></td>
+  </tr>
+  <tr>
+    <td width="403">&nbsp;</td>
+    <td width="331" height="40" align="right"><h3>Toluca Estado de México 08 Febrero 1981</h3></td>
+  </tr>
+</table>
+</header>
+<section>
+  <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2" valign="top"><fieldset>
+      <legend align="center"><h2>Información Personal</h2></legend> 
+      <img src="images/user.png" width="150" height="151" alt="foto" style="float:right; vertical-align:top;" />
+      Perfil:
+      <ul>
+        <li>Programador</li>
+        </ul>
+      Idiomas:
+      <ul>
+        <li>Español:<div class="meter" style="width:250px;"><span style="width: 100%; text-align:center;">100%</span></div></li>
+        <li>Ingles: <div class="meter orange" style="width:250px;"><span style="width: 60%; text-align:center;">60%</span></div></li>
+        </ul>
+      
+    </fieldset>      </td>
+    </tr>
+  <tr>
+    <td width="600">&nbsp;</td>
+    <td width="150" align="center">&nbsp;</td>
+  </tr>
+</table>
+</section>
+<footer class="footer">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="color: #666666;">
+  <tr>
+    <td width="734" align="center" valign="middle" ><img src="images/agt_home.png" width="40" height="40" />
+    Toluca Estado de México</td>
+    <td width="734" align="center" valign="middle" ><img src="images/address_blue.png" width="40" height="40" />moisesdiazb@gmail.com</td>
+    <td width="734" align="center" valign="middle" ><img src="images/facebook.png" alt="" width="40" height="40" /></td>
+    <td width="734" align="center" valign="middle" ><img src="images/twitter.png" alt="" width="40" height="40" /></td>
+  </tr>
+</table>
+</footer>
+</body>
+</html>
